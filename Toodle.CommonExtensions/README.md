@@ -1,5 +1,6 @@
 ﻿# Toodle.CommonExtensions
-
+![NuGet Version](https://img.shields.io/nuget/v/Toodle.CommonExtensions)
+![NuGet Downloads](https://img.shields.io/nuget/dt/Toodle.CommonExtensions)
 A collection of useful extension methods for caching, enum handling, geographic calculations, JSON serialization, and string manipulation.
 
 ## Installation
@@ -48,10 +49,10 @@ using Toodle.CommonExtensions;
 public enum Status { Active, Inactive, Pending }
 
 // Get all enum values sorted alphabetically
-List<Status> allStatuses = EnumExtensions.GetEnumValues<Status>();
+var allStatuses = EnumExtensions.GetEnumValues<Status>();
 
 // Get enum values excluding specific items
-List<Status> filteredStatuses = EnumExtensions.GetEnumValues<Status>(
+var filteredStatuses = EnumExtensions.GetEnumValues<Status>(
     new[] { Status.Inactive }
 );
 ```
@@ -100,7 +101,7 @@ The `StringExtensions` class provides string manipulation methods:
 using Toodle.CommonExtensions.String;
 
 string initials = "hello world".ToInitials(); // Returns "HW"
-string multipleWords = "United Kingdom".ToInitials(); // Returns "UK"
+string multipleWords = "United States of America".ToInitials(); // Returns "USOA"
 string multipleSpaces = "  multiple   spaces   ".ToInitials(); // Returns "MS"
 ```
 
