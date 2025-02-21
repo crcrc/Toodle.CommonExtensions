@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net6.0;net7.0;net8.0;net9.0</TargetFrameworks>
+		<LangVersion>8.0</LangVersion>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<PackageId>Toodle.CommonExtensions</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Matthew Goldthorpe</Authors>
+		<Company>Toodle</Company>
+		<Description>
+			A collection of useful extension methods for date transformations, caching, enum handling, geographic calculations, JSON serialization, and string manipulation.
+		</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageTags>extensions;helpers;utilities;caching;enum;enums;geography;geolocation;haversine;json;serialization;string-manipulation;string-extensions;initials</PackageTags>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>Common Extensions</Title>
+		<PackageProjectUrl>https://www.toodle.uk/opensource</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/crcrc/Toodle.CommonExtensions</RepositoryUrl>
+		<PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+	</PropertyGroup>
+
+</Project>
