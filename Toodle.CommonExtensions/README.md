@@ -48,10 +48,10 @@ using Toodle.CommonExtensions;
 public enum Status { Active, Inactive, Pending }
 
 // Get all enum values sorted alphabetically
-var allStatuses = EnumExtensions.GetEnumValues<Status>();
+List<Status> allStatuses = EnumExtensions.GetEnumValues<Status>();
 
 // Get enum values excluding specific items
-var filteredStatuses = EnumExtensions.GetEnumValues<Status>(
+List<Status> filteredStatuses = EnumExtensions.GetEnumValues<Status>(
     new[] { Status.Inactive }
 );
 ```
@@ -100,7 +100,7 @@ The `StringExtensions` class provides string manipulation methods:
 using Toodle.CommonExtensions.String;
 
 string initials = "hello world".ToInitials(); // Returns "HW"
-string multipleWords = "United States of America".ToInitials(); // Returns "USOA"
+string multipleWords = "United Kingdom".ToInitials(); // Returns "UK"
 string multipleSpaces = "  multiple   spaces   ".ToInitials(); // Returns "MS"
 ```
 
