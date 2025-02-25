@@ -25,6 +25,7 @@
 			- String.ToTitleCase()
 			- String.MonthNameToNumber()
 			- String.IsCurrentMonth()
+			- DateTime.Format()
 		</PackageReleaseNotes>
 	</PropertyGroup>
 	<ItemGroup>
