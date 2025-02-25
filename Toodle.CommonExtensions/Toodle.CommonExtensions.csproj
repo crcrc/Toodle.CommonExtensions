@@ -6,7 +6,7 @@
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<PackageId>Toodle.CommonExtensions</PackageId>
-		<Version>1.0.0</Version>
+		<Version>1.0.1</Version>
 		<Authors>Matthew Goldthorpe</Authors>
 		<Company>Toodle</Company>
 		<Description>
@@ -20,12 +20,14 @@
 		<Title>Common Extensions</Title>
 		<PackageProjectUrl>https://www.toodle.uk/opensource</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/crcrc/Toodle.CommonExtensions</RepositoryUrl>
-		<PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+		<PackageReleaseNotes>
+			Adding:
+			- String.ToTitleCase()
+			- String.MonthNameToNumber()
+			- String.IsCurrentMonth()
+		</PackageReleaseNotes>
 	</PropertyGroup>
 	<ItemGroup>
 		<None Include="README.md" Pack="true" PackagePath="\" />
-	</ItemGroup>
-	<ItemGroup>
-	  <Folder Include="Date\" />
 	</ItemGroup>
 </Project>
