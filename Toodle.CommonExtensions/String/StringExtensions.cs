@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -58,5 +59,21 @@ namespace Toodle.CommonExtensions.String
 
             return new string(input.Where(char.IsLetter).ToArray());
         }
+
+
+        /// <summary>
+        /// Converts a string to title case
+        /// </summary>
+        /// <param name="input">The string to convert</param>
+        /// <returns>The string in title case</returns>
+        public static string ToTitleCase(this string input)
+        {
+            if (string.IsNullOrEmpty(input))
+                return input;
+
+            TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo;
+            return textInfo.ToTitleCase(input.ToLower());
+        }
+
     }
 }
